@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="App Marketing Hub is a private analytics tool for an independent developer's own apps.">
+  <title>App Marketing Hub | App Marketing Analytics</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light dark}
+    body{margin:0;background:Canvas;color:CanvasText;line-height:1.8}
+    main{max-width:740px;margin:auto;padding:56px 24px 80px}
+    header{border-bottom:1px solid color-mix(in srgb,CanvasText 18%,transparent);padding-bottom:24px}
+    .eyebrow{font-weight:650;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;opacity:.7}
+    h1{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.04em;line-height:1.2;margin:.5rem 0 1rem}
+    h2{font-size:1.15rem;margin:2.2rem 0 .5rem}
+    p,li{font-size:1rem}
+    a{color:LinkText;text-underline-offset:3px}
+    footer{border-top:1px solid color-mix(in srgb,CanvasText 18%,transparent);margin-top:45px;padding-top:22px;font-size:.9rem}
+    .sub{opacity:.75}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Personal analytics · Read-only OAuth</div>
+    <h1>App Marketing Hub</h1>
+    <p>自分が運営するアプリのマーケティング状況を、安全に分析するための個人用ツールです。</p>
+    <p class="sub" lang="en">A personal-use reporting tool for an independent developer to analyze marketing performance of apps they operate.</p>
+  </header>
+  <section>
+    <h2>このサービスについて / Purpose</h2>
+    <p>App Marketing Hubは、アプリの広告収益や利用状況を比較し、改善施策の判断を支援します。一般ユーザー向けにアカウント登録を提供するサービスではありません。</p>
+    <p lang="en">The tool brings together aggregate app-level marketing and advertising reports to support decisions about the developer's own apps. It does not offer public account registration.</p>
+    <h2>Googleのデータを使う理由 / Google API Access</h2>
+    <p>Google AdMob APIの読み取り専用権限を使用し、登録アプリと推定広告収益の集計データを取得します。広告設定を変更したり、Googleアカウント内のメールを読んだりすることはありません。</p>
+    <p lang="en">Google AdMob's read-only API is used to retrieve app registration information and aggregated estimated ad earnings. No ad account settings are modified, and Gmail data is not accessed.</p>
+    <h2>保存と保護 / Storage &amp; Protection</h2>
+    <p>集計データはアクセス制限された非公開リポジトリに保管し、認証情報はGitHub Actionsの暗号化Secretsで管理します。サイトでは広告、トラッキングCookie、ユーザー分析ツールを使用しません。</p>
+    <p lang="en">Aggregate reports are kept in a restricted private repository. API credentials are stored in encrypted GitHub Actions secrets. This public information page uses no advertising, tracking cookies, or analytics.</p>
+  </section>
+  <footer>
+    <a href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+    <p class="sub">This page contains public documentation only. No API credentials, revenue reports, or private app data are exposed here.</p>
+  </footer>
+</main>
+</body>
+</html>
